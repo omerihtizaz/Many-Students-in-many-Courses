@@ -38,10 +38,7 @@ DROP TABLE IF EXISTS Member;
 		course_id INTEGER,
 		role INTEGER,
 		primary key(user_id, course_id)
-	);
-
-	
-	"""
+	);"""
 curr.executescript(sql_command)
 handle = open("roster_data.json")
 data = handle.read()
